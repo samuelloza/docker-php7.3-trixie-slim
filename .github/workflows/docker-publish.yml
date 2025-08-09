@@ -26,7 +26,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/miapp
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/php7.3-trixie-slim
           tags: |
             type=ref,event=branch,enable=true
             type=ref,event=tag
